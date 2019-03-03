@@ -1,0 +1,23 @@
+$color: white;
+$size: 40px;
+
+.key-button {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: $color;
+    background-image: linear-gradient(to bottom right, $color, darken($color, 25%));
+    min-width: $size;
+    min-height: $size;
+    border-width: 3px;
+    border-radius: 2px;
+    border-style: solid;
+    border-left-color: darken($color, 10%);
+    border-top-color: darken($color, 20%);
+    border-bottom-color: darken($color, 55%);
+    border-right-color: darken($color, 75%);
+
+    &.dis {
+        opacity: 0.3;
+    }
+}

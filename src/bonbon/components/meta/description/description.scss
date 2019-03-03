@@ -1,0 +1,38 @@
+.bonbon-description {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1170px) {
+        flex-wrap: wrap;
+
+        .description-image {
+            img {
+                width: auto;
+                max-width: 90vw;
+            }
+        }
+    }
+    .description-image {
+        flex-grow: 0;
+        flex-shrink: 1;
+
+        img {
+            border-radius: 15px;
+        }
+    }
+    .description-content {
+        text-align: justify;
+        padding: 10px;
+        margin-left: 15px;
+        color: #77a;
+        line-height: 30px;
+        min-width: 430px;
+        width: auto;
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+}

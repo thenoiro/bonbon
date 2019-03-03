@@ -1,0 +1,15 @@
+.bar {
+    position: absolute;
+    display: block;
+    width: 100%;
+
+    .bar-row {
+        position: absolute;
+
+        .bar-cell {
+            position: absolute;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+    }
+}

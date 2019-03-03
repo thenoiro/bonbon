@@ -1,0 +1,37 @@
+.bonbon-control-info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .control-part {
+        border: 1px solid #335;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 15px;
+
+        .control-part-header {
+            padding: 10px;
+        }
+    }
+
+    table {
+        tr {
+            td, th {
+                &:nth-child(1) {
+                    padding-right: 15px;
+                    text-align: center;
+                }
+                .minor {
+                    font-weight: normal;
+                    font-size: 0.8em;
+                    color: #668;
+                }
+            }
+            th {
+                font-size: 1.1em;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+$error-color: red;
+$info-color: yellow;
+$success-color: green;
+$normal-color: #77f;
+
+@mixin colorizeMessage($color) {
+    color: $color;
+    background-color: darken($color, 45%);
+    border-bottom: 1px solid $color;
+}
+
+.bonbon-message {
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    @include colorizeMessage($normal-color);
+
+    &.error {
+        @include colorizeMessage($error-color);
+    }
+    &.info {
+        @include colorizeMessage($info-color);
+    }
+    &.success {
+        @include colorizeMessage($success-color);
+    }
+    &.hidden {
+        opacity: 0;
+    }
+}

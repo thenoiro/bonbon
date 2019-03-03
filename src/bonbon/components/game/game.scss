@@ -1,0 +1,22 @@
+.bonbon {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #002;
+
+    &.fail {
+        font-size: 44px;
+        background-color: #400;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .bonbon-game-container {
+        margin-top: 30px;
+        position: relative;
+        left: -250px;
+    }
+}
